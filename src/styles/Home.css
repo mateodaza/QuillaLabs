@@ -1,0 +1,32 @@
+.homeDiv {
+	width: 100%;
+    height: 100vh;
+	background-image: url("https://www.ethereum.org/images/assets/1900/Ethereum-homestead-background-4.jpg");	
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.homeSection {
+	width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align:center;
+    align-content: center;
+}
+.projectsDiv {
+    background-color: rgba(30, 30, 30, 0.5);
+}
+.projectsDiv h1 {
+	padding: 0;
+ 	margin:auto;
+ 	color: white;
+}
+
+.aboutDiv { 
+    background-color: rgba(30, 30, 30, 0.7);	
+}
+.aboutDiv h1 {
+	padding: 0;
+	margin: auto;
+ 	color: white;
+}
