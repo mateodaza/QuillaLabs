@@ -7,7 +7,7 @@ class Navbar extends Component {
 
 myFunction(e){
 	e.preventDefault();
- 	var x = document.getElementById("myTopnav");
+ 	var x = document.getElementById("home");
     if (x.className === "topnav") {
         x.className += " responsive";
     } else {
@@ -24,9 +24,10 @@ myFunction(e){
           <p> Site under construction </p>
         </header>
     	
-        <div className="topnav" id="myTopnav">
-  			  <a href="#myTopnav" className="active">QuillaLabs</a>
+        <div className="topnav" id="home">
+  			  <a href="#home" className="active">QuillaLabs</a>
   			  <a href="#projects"> Projects </a>
+          <a href="#blog"> Blog </a>
   			  <a href="#about"> About </a>
   			  <a style={{fontSize:15, leftMargin: 5}} className="icon" onClick={this.myFunction.bind(this)}>&#9776;</a>
 		    </div>

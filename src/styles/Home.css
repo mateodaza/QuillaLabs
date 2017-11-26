@@ -8,25 +8,39 @@
 
 .homeSection {
 	width: 100%;
-    height: 100vh;
+    width: auto;
+    min-height: 100vh;
+    height: auto;
     display: flex;
     text-align:center;
     align-content: center;
 }
+.homeSection h1 {
+    padding: 0;
+    margin:auto;
+    color: white;
+}
+
 .projectsDiv {
     background-color: rgba(30, 30, 30, 0.5);
-}
-.projectsDiv h1 {
-	padding: 0;
- 	margin:auto;
- 	color: white;
 }
 
 .aboutDiv { 
     background-color: rgba(30, 30, 30, 0.7);	
 }
-.aboutDiv h1 {
-	padding: 0;
-	margin: auto;
- 	color: white;
+
+.blogDiv { 
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+.blogDiv h1{
+    color: black;
+}
+
+.mediumCard{
+    max-width: 25em;
+    width: auto;
+    padding: 1em;
 }
