@@ -13,7 +13,6 @@ class Home extends Component {
 	componentDidMount(){
 		getArticles().then( (snapshot) => {
 			this.setState({articles: snapshot});
-			console.log(this.state.articles);
 		});
 	}
 

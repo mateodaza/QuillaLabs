@@ -1,9 +1,11 @@
 .homeDiv {
-	width: 100%;
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
 	background-image: url("https://www.ethereum.org/images/assets/1900/Ethereum-homestead-background-4.jpg");	
+    background-color: rgba(30, 30, 30, 0.7);
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
 }
 
 .homeSection {

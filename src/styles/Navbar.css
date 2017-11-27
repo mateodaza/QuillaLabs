@@ -1,7 +1,7 @@
 .topnav {
   overflow: hidden;
   position: absolute;
-  width: 100vw;
+  width: 100%;
   background-color: rgba(30, 30, 30, 0.3);
 }
 
