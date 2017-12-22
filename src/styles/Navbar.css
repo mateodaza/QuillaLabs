@@ -1,22 +1,30 @@
-.topnav {
-  overflow: hidden;
-  position: absolute;
+.navbarDiv {
+  background-color: #2f2f2d;
+  min-height: 170px;
   width: 100%;
-  background-color: rgba(30, 30, 30, 0.3);
+  padding-top: 1.8em;
+}
+
+.topnav {
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  padding: 1.3em 1em 0 1em;
 }
 
 .topnav a {
   float: left;
   display: block;
+  width: 25%;
   color: #fff;
   text-align: center;
-  padding: 14px 16px;
+  margin-top: 1.2em;
   text-decoration: none;
   font-size: 20px;
 }
 
 .topnav a:hover {
-  color: black;
+  color: #d6d6d6;
 }
 
 .active {
@@ -30,9 +38,21 @@
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
-    float: right;
-    display: block;
+    display: flex;
+    float: left;
   }
+
+  .navbarDiv {
+    min-height: 60px;
+  }
+
+  .iconDiv img{
+    float: center;
+    margin-top: -40%;
+    width: 20%;
+    height: 20%;
+  }
+
 }
 
 @media screen and (max-width: 600px) {

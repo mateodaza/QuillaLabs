@@ -1,0 +1,27 @@
+.footer {
+    /*Keep it down*/
+    position: relative;
+    bottom: 0;
+  	height: 20em;	
+    width: 100%;
+    background-color: grey;
+
+    /* For center content */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerDiv {
+    min-height: 12em;
+    height: auto;
+    width: auto;
+    color: whitesmoke;
+    align-items: center;
+}
+
+.footerDiv *{
+	padding: 0;
+	margin: 0;
+}
