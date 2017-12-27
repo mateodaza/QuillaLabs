@@ -19,6 +19,17 @@ myFunction(e){
     }
 }
 
+responsiveBtnClicked(e){
+  e.preventDefault();
+  this.setState({clicked: !this.state.clicked });
+  var x = document.getElementById("home");
+    if (this.state.clicked===true && x.className === "responsiveItems") {
+        x.className += " responsiveItemsShow";
+    }else{
+      x.className = "responsiveItems";
+    }
+}
+
   render() {
     return (
     <div className="navbarDiv">
@@ -33,8 +44,16 @@ myFunction(e){
     }
     	
       <div className="topnav" id="home">
-          <div className="tabIcon">
-            <img alt=" " src='https://i.imgur.com/06vqYgJ.png' width='6.3%' height='6.3%' ></img>
+          <div class="dropdown">
+            <div className="tabIcon">
+                <img alt=" " src='https://i.imgur.com/06vqYgJ.png' width='6.3%' height='6.3%' ></img>
+            </div>
+            <div class="dropdown-content">
+              <div><a href="#home">Home</a></div>
+              <div> <a href="#projects"> Projects </a></div>
+              <div><a href="#blog"> Blog </a></div>
+              <div><a href="#about"> About </a></div>
+            </div>
           </div>
           <div className="iconDiv">
             <img alt=" " src='https://rawgit.com/mateodaza/d83f885a899fc47a3ac7b3046dfb7c50/raw/ba7bb2dfe68eb129b240a1751a62aff1bb60c386/quillalogo.svg' width='6.3%' height='6.3%' ></img>
