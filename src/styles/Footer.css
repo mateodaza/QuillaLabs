@@ -2,13 +2,16 @@
     /*Keep it down*/
     position: relative;
     bottom: 0;
-  	height: 20em;	
+    min-height: 20em;	
+    height: auto;
     width: 100%;
-    background-color: grey;
+    padding: 5em 0 1em 0;
+    background-color: #2f2f2d;
 
     /* For center content */
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
+
     align-items: center;
     justify-content: center;
 }
@@ -16,12 +19,127 @@
 .footerDiv {
     min-height: 12em;
     height: auto;
-    width: auto;
+    width: 100%;
     color: whitesmoke;
     align-items: center;
 }
 
 .footerDiv *{
 	padding: 0;
-	margin: 0;
+    margin: 0;
+    color: grey;
+}
+
+.greenDiv {
+    width: 100%;
+    margin-bottom: 60px;
+    border-bottom: 4px solid #3e7d23;
+}
+.navBox {
+    width: 80%;
+    height: auto;
+    left: 50%;
+    right: 50%;
+    position: relative;
+    transform: translate(-50%, -50%);
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    
+}
+.navBoxBorder {
+    border-bottom: 2px solid grey;
+    margin-bottom: 1.5em;
+}
+.navBox a {
+    text-decoration: none;
+}
+.navBox h4 {
+    padding: 0 35px 20px 35px;
+}
+
+.mainQBox {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    width: auto;
+    max-width: 30em;
+    margin: 2em;
+}
+.iconDivFooter {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-flow: row;
+    padding: 1.5em 0 0.5em 0.5em;
+}
+.iconDivFooter h2 {
+    align-self: center;
+    color: white;
+}
+.iconDivFooter img {
+    width: 3em;
+    height: 3em;
+}
+.mainTextBox {
+    max-width: 30em;
+    width: auto;
+    min-height: 5em;
+    height: auto;
+}
+.mainTextBox p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.contactBox {
+    max-width: 15em;
+    width: auto;
+    height: auto;
+    margin: 4em 1.5em 2em 2em;
+    justify-content: center;
+}
+.contactBox * {
+    padding-bottom: 0.5em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.contactBox h3 {
+    color: white;
+    padding-bottom: 1em;
+}
+
+.subsection1 {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-evenly;
+}
+
+.socialBar {
+    display: flex;
+    flex-flow: row wrap;
+    align-self: center;
+    margin: 1.5em 0 0 0;
+}
+.copyright {
+    margin: 0;
+    justify-content: center;
+}
+
+.miniIcon {
+    display: flex;
+    flex-flow: wrap row;
+}
+.miniIcon img {
+    width: 1.5em;
+    height: 1.5em;
+}
+.miniIcon h5 {
+    align-self: center;
+    padding-left: 0.5em;
 }
