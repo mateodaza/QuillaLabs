@@ -1,0 +1,154 @@
+.home-container {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #f7f7f0;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.ql-logo {
+  position: relative;
+  width:  30vw;
+  height: 80vh;
+  margin: 5% 0 0 5%;
+}
+.home-container h3 {
+  margin: 50vh 20px 0 20px;
+  color: #373837;
+  font-size: 64px;
+  margin-bottom: -30px;
+}
+.home-container h4 {
+  margin-bottom: -20px;
+}
+.title-container {
+  margin: 8% 0 0 -2%;
+}
+
+.promo-container {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  padding: 0 5% 2% 0;
+}
+.promo-container p {
+  color: #f7f7f0;
+  margin-top: 0;
+}
+.promo-container img{
+  position: relative;
+  width: 128px;
+  height: auto;
+}
+.promo-container a{
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#triangle-topright {
+  position: absolute;
+	width: 0;
+  height: 0;
+  top: 0;
+  right: 0;
+	border-top: 250px solid #428f4a;
+	border-left: 250px solid transparent;
+  z-index: 0;
+}
+
+#triangle-bottomright {
+  position: absolute;
+	width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+	border-bottom: 500px solid #de2833;
+  border-left: 500px solid transparent;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 900px){
+
+  #triangle-bottomright {
+    border-bottom: 400px solid #de2833;
+    border-left: 400px solid transparent;
+  }
+  #triangle-topright {
+    border-top: 300px solid #428f4a;
+    border-left: 300px solid transparent;
+  }
+}
+
+@media only screen and (max-width: 800px){
+
+  #triangle-bottomright {
+    border-bottom: 300px solid #de2833;
+    border-left: 300px solid transparent;
+  }
+  #triangle-topright {
+    border-top: 370px solid #428f4a;
+    border-left: 370px solid transparent;
+  }
+  .promo-container img{
+    position: relative;
+    width: 100px;
+    height: auto;
+    padding: 0 2% 0 0;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  #triangle-bottomright {
+    border-bottom: 300px solid #de2833;
+    border-left: 300px solid transparent;
+  }
+  #triangle-topright {
+    border-top: 370px solid #428f4a;
+    border-left: 370px solid transparent;
+  }
+  .home-container {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .ql-logo { 
+    margin: 0 0 0 35%;
+  }
+  .promo-container img{
+    position: relative;
+    width: 100px;
+    height: auto;
+    padding: 0 2% 0 0;
+  }
+  .home-container h3 {
+    margin: -5% 0;
+    font-size: 54px;
+  }
+  .title-container {
+    margin: -30% 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #triangle-bottomright {
+    border-bottom: 230px solid #de2833;
+    border-left: 230px solid transparent;
+  }
+  #triangle-topright {
+    border-top: 200px solid #428f4a;
+    border-left: 200px solid transparent;
+  }
+  .promo-container img{
+    position: relative;
+    width: 80px;
+    height: auto;
+  }
+  .home-container h3 {
+    font-size: 34px;
+  }
+  .home-container h4 {
+    font-size: 14px;
+  }
+}

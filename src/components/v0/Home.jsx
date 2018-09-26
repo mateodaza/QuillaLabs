@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import '../styles/Home.css';
-import {getArticles} from '../Helpers.js';
+import '../../styles/Home.css';
 
 class Home extends Component {
 	constructor(props){
@@ -8,12 +7,6 @@ class Home extends Component {
 	    this.state={
 	        articles: []
 	    }
-	}
-
-	componentDidMount(){
-		getArticles().then( (snapshot) => {
-			this.setState({articles: snapshot});
-		});
 	}
 
   render() {
@@ -32,26 +25,6 @@ class Home extends Component {
  					Our opinion 
  				</p>
 			</div>
-			{
-				this.state.articles.length !== 0 ? (
-					this.state.articles.map((stuff)=>{
-						return <div id={stuff.id} className="mediumCard">
-					       <blockquote className="embedly-card">
-						    <h4><a href={stuff.url}>{stuff.title}</a></h4>
-						    <p>
-						      {stuff.desc}
-						    </p>
-						  </blockquote>
-					  	</div>
-					})
-				):(
-					<div style={{width:'80%'}}>
-		 				<h3>
-		 					No Content
-		 				</h3>
-					</div>
-				)
-			}
 	    </div>
 	    <div className="homeSection aboutDiv" id="about">
 	        <h1> About Us </h1>
