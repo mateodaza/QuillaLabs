@@ -15,7 +15,7 @@ class HomeView extends Component {
         </div>
         <div className="promo-container">
           <a href="https://www.meetup.com/es/Blockchain-on-Tour-Barranquilla/events/254238361/">
-            <img alt="bot-logo"src="/BOT-LA-Logo.png" />
+            <img alt="bot-logo"src="https://i.imgur.com/cOf5ARl.png" />
             <p>Inscríbete!</p>
           </a>
         </div>
