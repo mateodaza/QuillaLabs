@@ -11,12 +11,11 @@ class HomeView extends Component {
         <div className="title-container">
           <h3>QuillaLabs</h3>
           <h4>Embajada Blockchain</h4>
-          <h5> Barranquilla - Colombia </h5>
         </div>
         <div className="promo-container">
           <a href="https://www.meetup.com/es/Blockchain-on-Tour-Barranquilla/events/254238361/">
             <img alt="bot-logo"src="https://i.imgur.com/cOf5ARl.png" />
-            <p>Inscríbete!</p>
+            <p>Inscríbete aquí!</p>
           </a>
         </div>
         <div id="triangle-bottomright"></div>
